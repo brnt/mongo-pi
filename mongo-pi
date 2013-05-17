@@ -1,0 +1,32 @@
+### Commented entries have reasonable defaults.
+### Uncomment to edit them.
+# Source: <source package name; defaults to package name>
+Section: misc
+Priority: optional
+Homepage: https://github.com/brnt/mongo-pi
+Standards-Version: 3.9.2
+
+Package: mongo-pi
+Version: 2.1.1-pre
+Maintainer: Brent Thomson
+# Pre-Depends: <comma-separated list of packages>
+# Depends: <comma-separated list of packages>
+# Recommends: <comma-separated list of packages>
+# Suggests: <comma-separated list of packages>
+# Provides: <comma-separated list of packages>
+# Replaces: <comma-separated list of packages>
+Architecture: armhf
+# Copyright: <copyright file; defaults to GPL2>
+Changelog: changelog
+# Readme: <README.Debian file; defaults to a generic one>
+# Extra-Files: <comma-separated list of additional files for the doc directory>
+# Files: <pair of space-separated paths; First is file to include, second is destination>
+#  <more pairs, if there's more than one file to include. Notice the starting space>
+Files: ./bin/mongod /opt/mongodb
+ ./bin/mongo        /opt/mongodb
+ ./bin/mongodump    /opt/mongodb
+ ./bin/bsondump     /opt/mongodb
+ ./init.d/mongodb   /etc
+ mongodb.conf       /etc
+
+Description: MongoDB client and server for Raspberry Pi
