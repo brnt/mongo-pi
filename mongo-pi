@@ -27,6 +27,5 @@ Files: ./bin/mongod /opt/mongodb
  ./bin/mongodump    /opt/mongodb
  ./bin/bsondump     /opt/mongodb
  ./init.d/mongodb   /etc
- mongodb.conf       /etc
 
 Description: MongoDB client and server for Raspberry Pi
